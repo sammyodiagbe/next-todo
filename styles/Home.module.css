@@ -1,0 +1,159 @@
+div.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url(../public/assets/bg-mobile-light.jpg), #efefef;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  padding: 1.3em;
+  padding-top: 2.5em;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+div.container div.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.5em;
+  color: #fafafa;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.container div.head button.toggleButton {
+  background: transparent;
+}
+
+div.container div.head h2 {
+  letter-spacing: 0.5ch;
+}
+
+div.container div.inputContainer {
+  background: #fff;
+  padding: 1.1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.container div.inputContainer input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: transparent;
+}
+
+div.container div.todos {
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+div.container div.todos div.tContainer {
+  min-height: 200px;
+}
+
+div.container div.todos p.noTodos {
+  padding: 1.1em;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #9394a5;
+  width: 15ch;
+  margin: 0 auto;
+}
+
+div.container div.todos div.bottom {
+  padding: 1.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.container div.todos div.bottom p {
+  font-size: 0.7rem;
+  color: #9193a6;
+}
+
+div.container div.todos div.bottom button.clearCompleted {
+  color: #9193a6;
+  background: transparent;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+div.container div.filter {
+  margin-top: 1em;
+  background: #fff;
+  text-align: center;
+  padding: 1.1em;
+}
+
+div.container div.filter button {
+  background: transparent;
+  color: #9394a5;
+  font-weight: 700;
+}
+
+div.container div.filter button:nth-child(2) {
+  margin: 0 1em;
+}
+
+div.container div.filter button.active {
+  color: #3a7bfd;
+}
+
+div.container p.dragAndDrop {
+  font-size: 0.8em;
+  margin-top: 3em;
+  text-align: center;
+  color: #9193a6;
+}
+
+div.container.darkMode {
+  background: url(../public/assets/bg-mobile-dark.jpg), #161722;
+  background-repeat: no-repeat;
+  background-position-x: left;
+}
+
+div.container.darkMode div.inputContainer {
+  background: #25273c;
+}
+
+div.container.darkMode div.inputContainer input {
+  color: #fff;
+}
+
+div.container.darkMode div.todos {
+  background: #25273c;
+}
+
+div.container.darkMode div.filter {
+  background: #25273c;
+}
+
+@media screen and (min-width: 1000px) {
+  div.container {
+    background: url(../public/assets/bg-desktop-light.jpg), #efefef;
+    background-repeat: no-repeat;
+    padding-top: 6em;
+  }
+  div.container.darkMode {
+    background: url(../public/assets/bg-desktop-dark.jpg), #161722;
+    background-repeat: no-repeat;
+  }
+  div.container div.todoContainer {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=Home.module.css.map */
